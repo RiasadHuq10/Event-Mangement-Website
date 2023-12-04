@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Volunteer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .cardcontainer {
+            display: flex;
+            justify-content: center;
+            margin-left: 0px;
+            margin-right: 0px;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" method="GET">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        
+                            <a class="nav-link" href="/displayVolunteer">Become volunteer</a>
+                       
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row my-4" style="margin: 20px;">
+
+        <div class="col-6">
+
+        <nav aria-label="breadcrumb ">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/Home">Home</a></li>
+              
+              <li class="breadcrumb-item active" aria-current="page">Become Volunteer</li>
+            </ol>
+          </nav>
+        </div>
+        
+        
+        
+
+    </div>
+    <div class="row .container mb-3"style="margin: 30px;">
+
+        
+
+        <form class="col-lg-6 col-md-12" action="/volunteer" method="post">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputName1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputContace1" class="form-label">Contact</label>
+                <input type="number" class="form-control" id="contact" name="contact" min="10000000" max="99999999"
+                    required>
+            </div>
+
+
+            <div class="row mb-3">
+                <label class="col-sm-2 col-form-label">Age Group</label>
+                <select class="form-select" aria-label="Default select example" name="age" required style="width: 800px;">
+                    <option selected>Select Age</option>
+                    <option value="18-30">18-30</option>
+                    <option value="30-50">30-50</option>
+                    <option value="50+">50+</option>
+                </select>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">About me and remark</label>
+                <textarea class="form-control" id="about" name="about" rows="3"></textarea>
+              </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" name="terms" required>
+                <label class="form-check-label" for="exampleCheck1">Agree to terms and conditions</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+
+        <div class=".container col-lg-6 col-md-12 card " style="height: 600px; display: flex;">
+            <img src="cardimg.png" class="card-img-top" alt="..." style="object-fit:fill">
+            <div class="card-body">
+                <h5 class="card-title">Become a volunteer</h5>
+                <p class="card-text">Your time and talent can make a real difference in people's lives</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        
+
+</body>
+
+</html>
